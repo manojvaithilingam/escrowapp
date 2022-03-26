@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.form-content {
+  border: 1px solid;
+  width: 50%;
+  padding: 20px;
+}
+.form-content p {
+  margin: 5px;
+}
+@media screen and (max-width: 768px) {
+  .form-content{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-content{
+    width: 90%;
+  }
+}
+.price-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 560px) {
+  .price-form{
+    flex-direction: column;
+    justify-content:flex-start
+  }
+}
+button {
+  margin: 10px 0px;
+}
